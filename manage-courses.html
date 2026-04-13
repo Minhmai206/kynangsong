@@ -72,7 +72,7 @@
     </main>
 
     <script type="module">
-        import supabase from '/supabase-config.js';
+        import supabase from './supabase-config.js';
 
         async function loadCourses() {
             const { data: courses } = await supabase.from('courses').select('*').order('id', { ascending: false });
